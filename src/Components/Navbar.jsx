@@ -70,9 +70,7 @@ const Navbar = () => {
         {user ? (
           <>
             <span className="text-lg">{user.email}</span>
-            <span className="h-12 w-12 border rounded-full">
-              {user.photoURL}
-            </span>
+            <span className="h-12 w-12 border rounded-full">{user.photo}</span>
 
             <button onClick={handleLogOut} className="btn btn-md">
               LogOut
