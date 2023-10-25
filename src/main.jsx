@@ -61,17 +61,17 @@ const router = createBrowserRouter([
         element: <Products />,
 
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.brand}`),
+          fetch(
+            `https://brand-shop-server-hyixxxp5t-roufs-projects.vercel.app/products/${params.brand}`
+          ),
       },
       {
         path: "/productDetails/:_id",
-        element: (
-          <PrivateRoute>
-            <ProductDetails />
-          </PrivateRoute>
-        ),
+        element: <PrivateRoute></PrivateRoute>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params._id}`),
+          fetch(
+            `https://brand-shop-server-hyixxxp5t-roufs-projects.vercel.app/products${params._id}`
+          ),
       },
     ],
   },

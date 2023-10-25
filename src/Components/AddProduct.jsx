@@ -27,7 +27,7 @@ const AddProduct = () => {
 
     //send data to the user
     fetch(
-      `https://brand-shop-server-lkzpahgiu-roufs-projects.vercel.app/product`,
+      `https://brand-shop-server-hyixxxp5t-roufs-projects.vercel.app/products`,
       {
         method: "POST",
         headers: {
