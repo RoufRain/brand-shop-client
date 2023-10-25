@@ -8,7 +8,7 @@ const HomeCard = ({ card }) => {
     <div>
       <div className="flex justify-center m-5" data-aos="fade-up">
         <div className="relative flex w-11/12 flex-col rounded-xl text-gray-700 shadow-md">
-          <div className="relative mx-2 mt-2 h-[250px] overflow-hidden rounded-xl text-gray-700">
+          <div className="relative mx-2 mt-2 h-[250px] overflow-hidden rounded-xl text-gray-600">
             <img className="h-full w-full" src={image} />
           </div>
 
@@ -23,18 +23,6 @@ const HomeCard = ({ card }) => {
               </button>
             </div>
           </div>
-
-          {/* ///CardDetails/${id} */}
-
-          {/* <div>
-              <Link to={`/eventDetails/${id}`}>
-                <div className="relative">
-                  <button className=" absolute bottom-4 right-2 h-8 w-28 border bg-sky-500  rounded-md text-[white]">
-                    See Details
-                  </button>
-                </div>
-              </Link>{" "}
-            </div> */}
         </div>
       </div>
     </div>
