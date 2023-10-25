@@ -19,7 +19,7 @@ const ProductCard = ({ product, products }) => {
       </div>
       <div className="flex justify-around  ">
         {/* ///CardDetails/${id} */}
-        <Link to={`/productDetails/${brand}`}>
+        <Link to={`/productDetails/${_id}`}>
           <button className=" btn btn-primary">See Details</button>
         </Link>{" "}
         <button className="btn btn-secondary">Update</button>

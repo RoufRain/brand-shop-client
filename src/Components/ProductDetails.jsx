@@ -9,9 +9,9 @@ const ProductDetails = () => {
       <h1>loaded products: {loadedProducts.length}</h1>
 
       <div className="grid  lg:grid-cols-2 gap-5 m-3">
-        {loadedProducts.map((productDetail) => (
+        {loadedProducts.filter((productDetail) => (
           <ProductDetailsCard
-            key={productDetail.brand}
+            key={productDetail._id}
             product={productDetail}
             products={loadedProducts}
           >

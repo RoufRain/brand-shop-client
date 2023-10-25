@@ -70,12 +70,8 @@ const Navbar = () => {
         {user ? (
           <>
             <span className="text-lg">{user.email}</span>
-            <span>
-              <label tabIndex={0} className="">
-                <div className=" ">
-                  {/* <FaCircleUser className="h-10 w-10"> </FaCircleUser> */}
-                </div>
-              </label>
+            <span className="h-12 w-12 border rounded-full">
+              {user.photoURL}
             </span>
 
             <button onClick={handleLogOut} className="btn btn-md">
