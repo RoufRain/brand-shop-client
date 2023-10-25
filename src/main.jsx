@@ -54,13 +54,12 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+
       {
-        path: "/products",
+        path: "/products/:brand",
         element: <Products />,
-        loader: () =>
-          fetch(
-            `https://brand-shop-server-i11rg1e81-roufs-projects.vercel.app/product`
-          ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/products/${params.brand}`),
       },
     ],
   },

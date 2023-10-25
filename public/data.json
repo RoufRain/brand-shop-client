@@ -34,5 +34,16 @@
     "name": "Nokia",
 
     "image": "https://i.ibb.co/G0Hq9sH/nokia.jpg"
+  },
+
+  {
+    "name": "Iphone 12",
+    "brand": "Apple",
+    "type": "phone",
+    "price": 79.99,
+    "rating": 5,
+
+    "description": "The iPhone 12 is a flagship smartphone by Apple, featuring a Super Retina XDR display, A14 Bionic chip, 5G capability, and a dual-camera system, known for its sleek design and impressive performance.",
+    "photo": "https://i.ibb.co/wrDh7R4/daniel-romero-l-SDI7-Z-DLz-M-unsplash.jpg"
   }
 ]

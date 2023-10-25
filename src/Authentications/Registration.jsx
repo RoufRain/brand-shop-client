@@ -24,6 +24,18 @@ const Registration = () => {
     const password = form.get("password");
     console.log(name, photo, email, password);
 
+    //check credential password validate
+    if (password.length < 6) {
+      swal("Password should not less than 6 characters");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      swal("Password should contain one Capital letter");
+      return;
+    } else if (!/[@#$%^&*]/.test(password)) {
+      swal("Password should contain one Special character");
+      return;
+    }
+
     //create user
     createUser(email, password)
       .then((result) => {
