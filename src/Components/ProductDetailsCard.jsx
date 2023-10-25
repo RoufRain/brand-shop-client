@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const ProductCard = ({ product, products }) => {
+const ProductDetailsCard = (product, products) => {
   const { _id, name, brand, type, price, description, rating, photo } = product;
 
   return (
@@ -17,15 +16,22 @@ const ProductCard = ({ product, products }) => {
         <h5 className="">Rating: {rating}</h5>
         <h5 className="">{description}</h5>
       </div>
-      <div className="flex justify-around  ">
+      <div className="flex justify-around">
         {/* ///CardDetails/${id} */}
-        <Link to={`/productDetails/${brand}`}>
-          <button className=" btn btn-primary">See Details</button>
-        </Link>{" "}
-        <button className="btn btn-secondary">Update</button>
+
+        {/* <div>
+              <Link to={`/productDetails/${_id}`}>
+                <div className="relative">
+                  <button className=" absolute bottom-4 right-2 h-8 w-28 border bg-sky-500  rounded-md text-[white]">
+                    See Details
+                  </button>
+                </div>
+              </Link>{" "}
+            </div> */}
+        {/* <button className="btn btn-secondary">Update</button> */}
       </div>
     </div>
   );
 };
 
-export default ProductCard;
+export default ProductDetailsCard;
