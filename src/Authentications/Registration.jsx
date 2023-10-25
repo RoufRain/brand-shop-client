@@ -97,7 +97,7 @@ const Registration = () => {
             </div>
 
             <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
+              <a href="#" className="label-text-alt text-lg link link-hover">
                 Already have account?{" "}
                 <Link className="text-lg text-blue-500" to={"/login"}>
                   Login
