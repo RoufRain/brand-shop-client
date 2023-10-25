@@ -1,13 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import HomeBrandCards from "./HomeBrandCards";
 
-// import image from "../../public/images/music comment-chinchure-ZhQCZjr9fHo-unsplash.jpg";
-
-//  import bgimage from "../../public/images/bg image.jpg";
-// import client1 from "../../public/images/logan-weaver-lgnwvr-MXnkWolg3Ug-unsplash.jpg";
-// import client2 from "../../public/images/samuel-raita-RiDxDgHg7pw-unsplash.jpg";
-// import client3 from "../../public/images/vidar-nordli-mathisen-qusExK3sba8-unsplash.jpg";
-
 const Home = () => {
   const Cards = useLoaderData();
   console.log(Cards);
@@ -31,7 +24,7 @@ const Home = () => {
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"
             >
-              <h1 className="mb-5 text-[black] text-5xl font-bold">
+              <h1 className="mb-5 text-[#2f1b1b] text-5xl font-bold ">
                 Explore Technology...
               </h1>
             </div>
