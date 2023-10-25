@@ -1,7 +1,3 @@
-// import { useContext } from "react";
-// import { AuthContext } from "../Provider/AuthProvider";
-// import { Navigate } from "react-router-dom";
-
 import { useContext } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -106,7 +102,7 @@ const Login = () => {
             </div>
 
             <label className="label">
-              <p className="label-text-alt link link-hover">
+              <p className="label-text-alt text-lg link link-hover">
                 Do not have account?{" "}
                 <Link className="text-lg text-blue-500" to={"/registration"}>
                   Register
